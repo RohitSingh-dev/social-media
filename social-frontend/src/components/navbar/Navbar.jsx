@@ -12,18 +12,18 @@ const Navbar = () => {
                 <a className='navbar-left-about' href='#About'>About</a>
             </div>
             <div>
-                <a className='navbar-left-surprise' href='#Suprise'>Surprise</a>
+                <a className='navbar-left-blog' href='#Blog'>Blog</a>
             </div>
             <div>
                 <a className='navbar-left-contact' href='#Contact'>Contact</a>
             </div>
         </div>
         <div className='navbar-right'>
-        <div>
-            <button className='navbar-right-signIn' onClick=''>Sign In</button>
+        <div className='navbar-right-signIn'>
+            <button onClick=''>Sign In</button>
         </div>
-        <div>
-            <button className='navbar-right-register' onClick=''>Register</button>
+        <div className='navbar-right-register'>
+            <button onClick=''>Register</button>
         </div>
         </div>
     </div>

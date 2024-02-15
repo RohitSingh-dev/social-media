@@ -1,0 +1,11 @@
+.registerPage{
+    background-image: url(../../assets/registerPage.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.registerPage-bottom{
+    display: flex;
+    justify-content: flex-end;
+    margin: 80px 150px;
+}

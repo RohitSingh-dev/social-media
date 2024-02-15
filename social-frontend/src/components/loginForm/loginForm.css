@@ -1,0 +1,53 @@
+.loginForm{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family:cursive;
+    height: 400px;
+    width: 400px;
+}
+.loginForm-welcome{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+}
+.loginForm-input{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+.loginForm-input input{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.loginForm-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.loginForm-button input{
+    padding: 10px 102px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+}
+.loginForm-button input:hover{
+    background-color:limegreen;
+}
+.loginForm-register{
+    color: black;
+}
+.loginForm-register span{
+    color: #fff;
+}
+.loginForm-register span:hover{
+    color: limegreen;
+    font-weight: 800;
+    cursor: pointer;
+}

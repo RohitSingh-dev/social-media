@@ -1,9 +1,11 @@
 import './App.css';
-import {Navbar} from './components';
+import {RegisterPage} from './components';
 
 function App() {
   return (
-    <Navbar></Navbar>
+    <div>
+      <RegisterPage />
+    </div>
   );
 }
 

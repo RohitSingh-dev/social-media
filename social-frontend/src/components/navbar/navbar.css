@@ -1,24 +1,49 @@
 .navbar{
     display: flex;
-    background-color: none;
     justify-content: space-between;
+    font-family: cursive;
 }
 .navbar-left{
     display: flex;
-    margin: 30px 80px;
+    margin: 40px 100px;
 }
 .navbar-left a{
     margin: 30px;
     text-decoration: none;
+    color: #fff;
+}
+.navbar-left a:hover{
+    color:gold;
+    font-size: 17px;
 }
 .navbar-right{
     display: flex;
-    margin: 30px 80px;
+    margin: 40px 100px;
 }
 .navbar-right button{
     margin: 0px 20px;
+    font-family: cursive;
+    cursor: pointer;
 }
-.navbar-right-signIn{
+.navbar-right-signIn button{
     background-color: transparent;
     border: none;
+    padding-bottom: 4px;
+    color: #fff;
+    font-size: 17px;
+    opacity: 0.8;
+    border-bottom: #fff 2px solid;
+}
+.navbar-right-signIn button:hover{
+    color: #fff;
+    opacity: 1;
+}
+.navbar-right-register button{
+    border: none;
+    border-radius: 12px;
+    padding: 7px 20px;
+    font-weight:700;
+}
+.navbar-right-register button:hover{
+    color: red;
 }

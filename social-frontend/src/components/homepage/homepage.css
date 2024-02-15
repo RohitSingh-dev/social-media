@@ -1,0 +1,11 @@
+.homepage{
+    background-image: url(../../assets/homepage.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.homepage-bottom{
+    display: flex;
+    justify-content: flex-end;
+    margin: 80px 150px;
+}
