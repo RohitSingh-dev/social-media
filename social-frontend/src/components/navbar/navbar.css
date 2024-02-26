@@ -2,23 +2,31 @@
     display: flex;
     justify-content: space-between;
     font-family: cursive;
+    align-items: center;
+    background-color: black;
 }
 .navbar-left{
-    display: flex;
-    margin: 40px 100px;
+    margin-left: 50px;
+    color: #fff;
 }
-.navbar-left a{
-    margin: 30px;
+.navbar-left span{
+    color: #f34f67;
+}
+.navbar-middle{
+    display: flex;
+}
+.navbar-middle a{
+    margin: 0px 45px;
     text-decoration: none;
     color: #fff;
 }
-.navbar-left a:hover{
-    color:gold;
-    font-size: 17px;
+.navbar-middle a:hover{
+    color:#f34f67;
+    font-size: 18px;
 }
 .navbar-right{
     display: flex;
-    margin: 40px 100px;
+    margin: 20px 90px;
 }
 .navbar-right button{
     margin: 0px 20px;
@@ -35,7 +43,7 @@
     border-bottom: #fff 2px solid;
 }
 .navbar-right-signIn button:hover{
-    color: #fff;
+    color: #f34f67;
     opacity: 1;
 }
 .navbar-right-register button{
@@ -45,5 +53,6 @@
     font-weight:700;
 }
 .navbar-right-register button:hover{
-    color: red;
+    color: #fff;
+    background-color: #f34f67;
 }

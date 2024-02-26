@@ -5,25 +5,28 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className='navbar-left'>
+            <h1>Mag<span>net</span></h1>
+        </div>
+        <div className='navbar-middle'>
             <div>
-                <a className='navbar-left-home' href='#Home'>Home</a>
+                <a className='navbar-middle-home' href='/Homepage'>Home</a>
             </div>
             <div>
-                <a className='navbar-left-about' href='#About'>About</a>
+                <a className='navbar-middle-about' href='#About'>About</a>
             </div>
             <div>
-                <a className='navbar-left-blog' href='#Blog'>Blog</a>
+                <a className='navbar-middle-blog' href='#Blog'>Blog</a>
             </div>
             <div>
-                <a className='navbar-left-contact' href='#Contact'>Contact</a>
+                <a className='navbar-middle-contact' href='#Contact'>Contact</a>
             </div>
         </div>
         <div className='navbar-right'>
         <div className='navbar-right-signIn'>
-            <button onClick=''>Sign In</button>
+            <a href='/SignInPage'><button>Sign In</button></a>
         </div>
         <div className='navbar-right-register'>
-            <button onClick=''>Register</button>
+            <a href='/RegisterPage' ><button>Register</button></a>
         </div>
         </div>
     </div>

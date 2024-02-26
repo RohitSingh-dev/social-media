@@ -1,11 +1,27 @@
 .homepage{
-    background-image: url(../../assets/homepage.jpg);
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: cursive;
 }
 .homepage-bottom{
     display: flex;
-    justify-content: flex-end;
-    margin: 80px 150px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #fdece4;
+}
+.homepage-bottom-left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.homepage-bottom-left span{
+    color: #f34f67;
+}
+.homepage-bottom-left p{
+    margin-top: -10px;
+}
+.homepage-bottom-right img{
+    height: 500px;
 }
