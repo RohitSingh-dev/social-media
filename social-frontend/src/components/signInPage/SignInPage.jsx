@@ -28,7 +28,7 @@ const SignInPage = () => {
                         <input type="submit" value="Sign In"></input>
                     </div>
                     <div className='signInPage-bottom-right-form-register'>
-                        <p>Need an account ? <span onClick=''>Register Here</span></p>
+                        <p>Need an account ? <a href='/RegisterPage'>Register Here</a></p>
                     </div>
                 </form>
             </div>

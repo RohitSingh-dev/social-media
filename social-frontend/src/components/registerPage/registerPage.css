@@ -54,7 +54,10 @@
 .registerPage-bottom-right-buttons-register:hover{
     background-color: #0ff80f;
 }
-.registerPage-bottom-right-login span:hover{
+.registerPage-bottom-right-login a{
+    text-decoration: none;
+}
+.registerPage-bottom-right-login a:hover{
     cursor: pointer;
     color: red;
     font-weight: 600;

@@ -32,7 +32,7 @@ const RegisterPage = () => {
                   <input className='registerPage-bottom-right-buttons-register' type="submit" value="Register"></input>
                 </div>
                 <div className='registerPage-bottom-right-login'>
-                  <p>Already have an account ? <span onClick=''>Sign In</span></p>
+                  <p>Already have an account ? <a href='/SignInPage'>Sign In</a></p>
                 </div>
               </form>
             </div>

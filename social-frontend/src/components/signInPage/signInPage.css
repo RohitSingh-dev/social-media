@@ -46,7 +46,10 @@
 .signInPage-bottom-right-form-button input:hover{
     background-color:#0ff80f;
 }
-.signInPage-bottom-right-form-register span:hover{
+.signInPage-bottom-right-form-register a{
+    text-decoration: none;
+}
+.signInPage-bottom-right-form-register a:hover{
     cursor: pointer;
     color: red;
     font-weight: 600;
