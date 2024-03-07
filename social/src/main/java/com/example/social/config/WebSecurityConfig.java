@@ -16,6 +16,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableWebSecurity
+@Deprecated
 public class WebSecurityConfig {
     
     @Autowired
@@ -37,7 +38,7 @@ public class WebSecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity, AuthenticationManager authenticationManager) throws Exception{
 
         httpSecurity.csrf(csrf -> csrf.disable()).authorizeHttpRequests((auth) -> 
-        auth.requestMatchers(HttpMethod.POST, "/user").permitAll()
+        auth.requestMatchers(HttpMethod.POST, "/register").permitAll()
         .requestMatchers(HttpMethod.POST, "/login").permitAll()
         .anyRequest().authenticated())        
         .authenticationManager(authenticationManager)
