@@ -1,15 +1,19 @@
 package com.example.social.service;
 
 import java.io.IOException;
+import java.util.Base64;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.social.entity.LoginInfo;
 import com.example.social.entity.User;
+import com.example.social.model.UserProfileResponse;
 import com.example.social.repository.LoginInfoRepository;
 import com.example.social.repository.UserRepository;
 
@@ -40,17 +44,27 @@ public class UserService {
     }
 
     public String uploadPic(int id, MultipartFile pic) throws IOException{
-        User existingUser = repository.findById(id).get();
-        existingUser.setPic(pic.getBytes());
+        User existingUser = repository.findById(id).orElseThrow(()-> new RuntimeException("User Not Found"));
+        validateLoggedInUser(existingUser);
+        existingUser.setPic(new String(Base64.getEncoder().encode(pic.getBytes())));
         repository.save(existingUser);
         return "Pic Uploaded Successfully";
     }
 
-    public User getUser(int id){
-        return repository.findById(id).orElseThrow(()-> new RuntimeException("User Not Found"));
+    public UserProfileResponse getUser(int id){
+        User user= repository.findById(id).orElseThrow(()-> new RuntimeException("User Not Found"));
+        validateLoggedInUser(user);
+        UserProfileResponse userProfileResponse= new UserProfileResponse();
+        userProfileResponse.setName(user.getName());
+        userProfileResponse.setEmailId(user.getEmailId());
+        userProfileResponse.setPhNum(user.getPhNum());
+        userProfileResponse.setBio(user.getBio());
+        userProfileResponse.setPic(user.getPic());
+        return userProfileResponse;
     }
 
     public User updateUser(User user){
+        validateLoggedInUser(user);
         User existingUser= repository.findById(user.getId()).orElseThrow(()->new RuntimeException("User Not Found"));
         existingUser.setName(user.getName());
         existingUser.setBio(user.getBio());
@@ -62,6 +76,7 @@ public class UserService {
     }
 
     public String deleteUser(int id){
+        validateLoggedInUser(repository.findById(id).get());
         repository.deleteById(id);
         return "User deleted successfully";
     }
@@ -101,4 +116,13 @@ public class UserService {
         List<User> friendList= user.getFriendList();
         return friendList;
     }
+
+    public void validateLoggedInUser(User user){
+        UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        User loggedInUser = repository.findByEmailId(userDetails.getUsername());
+        if(loggedInUser.getId()!= user.getId()){
+            throw new RuntimeException("Invalid User");
+        }
+    }
+
 }

@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.social.entity.User;
+import com.example.social.model.UserProfileResponse;
 import com.example.social.service.UserService;
 
 @RestController
@@ -41,8 +42,8 @@ public class UserContoller {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> getUser(@PathVariable int id){
-        return new ResponseEntity<User>(service.getUser(id), HttpStatus.OK);
+    public ResponseEntity<UserProfileResponse> getUser(@PathVariable int id){
+        return new ResponseEntity<UserProfileResponse>(service.getUser(id), HttpStatus.OK);
     }
 
     @PutMapping("")
@@ -75,7 +76,7 @@ public class UserContoller {
     @GetMapping("/picDownload/{id}")
     public ResponseEntity<?> getUserPic(@PathVariable int id) throws IOException {
         return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG)
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"studentpic.jpg\"")
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"pic.jpg\"")
                 .body(service.getUser(id).getPic());
     }
   

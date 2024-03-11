@@ -12,7 +12,6 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
 import jakarta.persistence.ManyToOne;
 
 @Entity
@@ -21,9 +20,8 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Lob
     @Column(length = 1000000)
-    private byte[] pic;
+    private String pic;
     private int likes;
     @CreationTimestamp
     private Date createdDate;
@@ -43,6 +41,14 @@ public class Post {
         return id;
     }
 
+    public String getPic() {
+        return pic;
+    }
+
+    public void setPic(String pic) {
+        this.pic = pic;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -53,14 +59,6 @@ public class Post {
 
     public void setLikes(int likes) {
         this.likes = likes;
-    }
-
-    public byte[] getPic() {
-        return pic;
-    }
-
-    public void setPic(byte[] pic) {
-        this.pic = pic;
     }
 
     public User getUser() {

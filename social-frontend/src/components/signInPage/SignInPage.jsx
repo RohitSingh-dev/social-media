@@ -59,6 +59,9 @@ const SignInPage = () => {
                     <div className='signInPage-bottom-right-form-button'>
                         <input type="submit" value="Sign In"></input>
                     </div>
+                    <div className='signInPage-bottom-right-form-message'>
+                        {message ? <p>{message}</p> : null}
+                    </div>
                     <div className='signInPage-bottom-right-form-register'>
                         <p>Need an account ? <a href='/RegisterPage'>Register Here</a></p>
                     </div>

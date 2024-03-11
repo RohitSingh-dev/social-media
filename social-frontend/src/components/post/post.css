@@ -1,0 +1,76 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: min-content;
+}
+.post-c1{
+    display: flex;
+    align-items: center;
+    margin: -5px 1px;
+    font-family: cursive;
+    color: #f34f67;
+}
+.post-c1 button{
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #f34f67;
+    font-weight: 900;
+}
+.post-c1 p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.post-c2 img{
+    aspect-ratio: 1/1;
+    height: 355px;
+}
+.post-c3{
+    display: flex;
+}
+.post-c3 button{
+    border: none;
+    background: none;
+    font-size: 25px;
+    margin: 4px 5px;
+    color: #f34f67;
+    cursor: pointer;
+}
+.post-c3-icon:hover{
+    color: black;
+}
+.post-c4{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.post-c4 a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+    color: #0087ca;
+}
+.post-c4 a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.post-c4 a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .post-c1 button {
+      animation: App-logo-spin infinite 8s linear;
+    }
+}

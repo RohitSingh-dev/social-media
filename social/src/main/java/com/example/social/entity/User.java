@@ -16,7 +16,6 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.Email;
@@ -36,9 +35,8 @@ public class User {
     @Max(10)
     private int phNum;
     private String bio;
-    @Lob
     @Column(length = 1000000)
-    private byte[] pic;
+    private String pic;
     private String password;
 
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
@@ -116,20 +114,20 @@ public class User {
         this.friendList = friendList;
     }
 
-    public byte[] getPic() {
-        return pic;
-    }
-
-    public void setPic(byte[] pic) {
-        this.pic = pic;
-    }
-
     public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPic() {
+        return pic;
+    }
+
+    public void setPic(String pic) {
+        this.pic = pic;
     }
 
     @Override
