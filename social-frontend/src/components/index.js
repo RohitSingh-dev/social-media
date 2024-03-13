@@ -6,3 +6,6 @@ export {default as Dashboard} from './dashboard/Dashboard';
 export {default as WelcomeBar} from './welcomeBar/WelcomeBar';
 export {default as NavigationBar} from './navigationBar/NavigationBar';
 export {default as Post} from './post/Post';
+export {default as AboutPage} from './aboutPage/AboutPage';
+export {default as BlogPage} from './blogPage/BlogPage';
+export {default as ContactPage} from './contactPage/ContactPage';

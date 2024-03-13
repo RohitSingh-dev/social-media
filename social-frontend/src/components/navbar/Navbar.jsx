@@ -9,16 +9,16 @@ const Navbar = () => {
         </div>
         <div className='navbar-middle'>
             <div>
-                <a className='navbar-middle-home' href='/Homepage'>Home</a>
+                <a className='navbar-middle-home' href='/'>Home</a>
             </div>
             <div>
-                <a className='navbar-middle-about' href='#About'>About</a>
+                <a className='navbar-middle-about' href='/About'>About</a>
             </div>
             <div>
-                <a className='navbar-middle-blog' href='#Blog'>Blog</a>
+                <a className='navbar-middle-blog' href='/Blog'>Blog</a>
             </div>
             <div>
-                <a className='navbar-middle-contact' href='#Contact'>Contact</a>
+                <a className='navbar-middle-contact' href='/Contact'>Contact</a>
             </div>
         </div>
         <div className='navbar-right'>

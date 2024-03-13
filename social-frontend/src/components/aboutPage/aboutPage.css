@@ -1,0 +1,42 @@
+.aboutPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    background-color: #fdece4;
+    font-family: cursive;
+}
+.aboutPage-bottom{
+    display: flex;
+    flex-direction: column;
+}
+.aboutPage-bottom-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutPage-bottom-top h1{
+    color: red;
+    padding-bottom: 2px;
+    border-bottom: 2px black solid ;
+}
+.aboutPage-bottom-top span{
+    width: 700px;
+    text-align: center;
+}
+.aboutPage-bottom-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutPage-bottom-bottom-left{
+    margin: 90px;
+}
+.aboutPage-bottom-bottom-left h2{
+    color: red;
+}
+.aboutPage-bottom-bottom-right img{
+    margin: 50px;
+    height: 380px;
+}
