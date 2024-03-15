@@ -9,3 +9,4 @@ export {default as Post} from './post/Post';
 export {default as AboutPage} from './aboutPage/AboutPage';
 export {default as BlogPage} from './blogPage/BlogPage';
 export {default as ContactPage} from './contactPage/ContactPage';
+export {default as Contacts} from './contacts/Contacts';

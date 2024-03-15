@@ -1,0 +1,34 @@
+.blogPage{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+}
+.blogPage-top{
+    font-family: cursive;
+    margin: 0px 50px;
+    color: #fff;
+}
+.blogPage-top span{
+    color: #f34f67;
+}
+.blogPage-middle{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.blogPage-middle img{
+    height: 450px;
+}
+.blogPage-bottom{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    color: #fff;
+    font-size: 30px;
+    margin-top: -60px;
+}
+.blogPage-bottom span{
+    color: #f34f67;
+    margin-left: 50px;
+}

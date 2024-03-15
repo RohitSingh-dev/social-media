@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url(../../assets/dashboard_background.webp);
+    background-position: center;
+    height: 100vh;
 }
 .dashboard-bottom{
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
 }

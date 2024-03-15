@@ -3,7 +3,7 @@ import './post.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
-import image from '../../assets/homepage_animation.gif';
+import image from '../../assets/sample_post.jpg';
 
 const Post = (name) => {
   return (

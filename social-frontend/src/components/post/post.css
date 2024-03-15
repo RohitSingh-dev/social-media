@@ -69,8 +69,3 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-@media (prefers-reduced-motion: no-preference) {
-    .post-c1 button {
-      animation: App-logo-spin infinite 8s linear;
-    }
-}

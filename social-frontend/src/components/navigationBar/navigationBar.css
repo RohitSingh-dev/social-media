@@ -1,0 +1,20 @@
+.navigationBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    font-size: 19px;
+    font-family: cursive;
+}
+.navigationBar div{
+    width: 90px;
+    height: 30px;
+    padding: 10px 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.navigationBar div:hover{
+    background-color: #f34f67;
+    font-weight: 600;
+}

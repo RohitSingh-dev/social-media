@@ -55,6 +55,8 @@
     font-weight: 700;
 }
 .btn--red {
+    padding: 7px 22px;
+    background-color:#f34f67;
     --hue: 0;
 }
 .btn:active,
@@ -84,7 +86,7 @@
     width: 100%;
     transform: scale(0);
     transform-origin: 50% 50%;
-    transition: transform 0.2s cubic-bezier(0.5, 1, 0.89, 1);
+    transition: transform 0.5s cubic-bezier(0.5, 1, 0.89, 1);
     z-index: 1;
 }
 
@@ -100,7 +102,7 @@
 
 .btn__bg:nth-of-type(3) {
     --hueBg: calc(var(--hue) - 270);
-    transition-delay: 0.0625s;
+    transition-delay: 0.0525s;
 }
 
 .btn__bg:nth-of-type(4) {
@@ -112,7 +114,7 @@
 .btn:focus .btn__bg,
 .btn:active .btn__bg {
     transform: scale(1.5);
-    transition: transform 0.4s cubic-bezier(0.11, 0, 0.5, 0);
+    transition: transform 0.7s cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .btn:hover .btn__bg:nth-of-type(1),
@@ -124,17 +126,17 @@
 .btn:hover .btn__bg:nth-of-type(2),
 .btn:focus .btn__bg:nth-of-type(2),
 .btn:active .btn__bg:nth-of-type(2) {
-    transition-delay: 0.25s;
+    transition-delay: 0.35s;
 }
 
 .btn:hover .btn__bg:nth-of-type(3),
 .btn:focus .btn__bg:nth-of-type(3),
 .btn:active .btn__bg:nth-of-type(3) {
-    transition-delay: 0.375s;
+    transition-delay: 0.475s;
 }
 
 .btn:hover .btn__bg:nth-of-type(4),
 .btn:focus .btn__bg:nth-of-type(4),
 .btn:active .btn__bg:nth-of-type(4) {
-    transition-delay: 0.5s;
+    transition-delay: 0.6s;
 }
