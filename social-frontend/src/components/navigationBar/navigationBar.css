@@ -18,3 +18,7 @@
     background-color: #f34f67;
     font-weight: 600;
 }
+.navigationBar a{
+    text-decoration: none;
+    color: #fff;
+}

@@ -7,11 +7,11 @@ const NavigationBar = () => {
   return (
     <div className='navigationBar'>
       <div className='icon'><FontAwesomeIcon icon={faAngleDown}></FontAwesomeIcon></div>
-      <div className='Home'>Home</div>
-      <div className='Profile'>Profile</div>
-      <div className='Friends'>Friends</div>
-      <div className='Messages'>Messages</div>
-      <div className='My Posts'>My Posts</div>
+      <div className='Home'><a href='/Dashboard'>Home</a></div>
+      <div className='Profile'><a href='/Profile'>Profile</a></div>
+      <div className='Friends'><a href='/Friends'>Friends</a></div>
+      <div className='Messages'><a href='/Chat'>Chat</a></div>
+      <div className='My Posts'><a href='/MyPosts'>My Posts</a></div>
     </div>
   )
 }

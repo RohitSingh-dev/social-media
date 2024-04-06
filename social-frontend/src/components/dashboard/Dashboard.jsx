@@ -1,7 +1,6 @@
 import React from 'react';
 import './dashboard.css';
-import WelcomeBar from '../welcomeBar/WelcomeBar';
-import {NavigationBar, Post} from '../../components';
+import {NavigationBar, Post, WelcomeBar} from '../../components';
 
 const Dashboard = () => {
   return (

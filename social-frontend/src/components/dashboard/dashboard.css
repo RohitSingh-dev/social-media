@@ -1,12 +1,20 @@
 .dashboard{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-image: url(../../assets/dashboard_background.webp);
     background-position: center;
     height: 100vh;
 }
 .dashboard-bottom{
     display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.dashboard-bottom-left{
+    margin-left: 50px;
+}
+.dashboard-bottom-right{
+    display: flex;
+    width: 100%;
     justify-content: center;
 }

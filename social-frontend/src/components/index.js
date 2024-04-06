@@ -10,3 +10,7 @@ export {default as AboutPage} from './aboutPage/AboutPage';
 export {default as BlogPage} from './blogPage/BlogPage';
 export {default as ContactPage} from './contactPage/ContactPage';
 export {default as Contacts} from './contacts/Contacts';
+export {default as ProfilePage} from './profilePage/ProfilePage';
+export {default as FriendsPage} from './friendsPage/FriendsPage';
+export {default as ChatPage} from './chatPage/ChatPage';
+export {default as UserPostsPage} from './userPostsPage/UserPostsPage';

@@ -1,0 +1,45 @@
+.userPostsPage{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../assets/dashboard_background.webp);
+    background-position: center;
+    height: 100%;
+}
+.userPostsPage-bottom{
+    display: flex;
+    align-items: center;
+}
+.userPostsPage-bottom-left{
+    margin-left: 50px;
+}
+.userPostsPage-bottom-right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.userPostsPage-bottom-right-top{
+    display: flex;
+    align-items: center;
+    font-family: cursive;
+    color: yellow;
+}
+.userPostsPage-bottom-right-top h1{
+    margin-left: 470px;
+}
+.userPostsPage-bottom-right-top button{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: 600;
+    height: 30px;
+    width: 130px;
+    border: none;
+    border-radius: 7px;
+    background-color: #f34f67;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 350px;
+}
+.userPostsPage-bottom-right-top button:hover{
+    background-color: #e2576c;
+}

@@ -1,5 +1,5 @@
 import './App.css';
-import {AboutPage, BlogPage, ContactPage, Dashboard, Homepage, RegisterPage, SignInPage} from './components';
+import {AboutPage, BlogPage, ChatPage, ContactPage, Dashboard, FriendsPage, Homepage, ProfilePage, RegisterPage, SignInPage, UserPostsPage} from './components';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -13,6 +13,10 @@ function App() {
         <Route path='/About' element={<AboutPage />} />
         <Route path='/Blog' element={<BlogPage />} />
         <Route path='/Contact' element={<ContactPage />} />
+        <Route path='/Profile' element={<ProfilePage />} />
+        <Route path='/Friends' element={<FriendsPage />} />
+        <Route path='/Chat' element={<ChatPage />} />
+        <Route path='/MyPosts' element={<UserPostsPage />} />
       </Routes>
     </BrowserRouter>
   );

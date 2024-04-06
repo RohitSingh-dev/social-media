@@ -10,7 +10,7 @@ const Post = (name) => {
     <div className='post'>
       <div className='post-c1'>
         <div><button><FontAwesomeIcon icon={faReact} /></button></div>
-        <p>@{name="Rohit"}</p>
+        <p>{name="Rohit"}</p>
       </div>
       <div className='post-c2'>
         <img src={image} alt='post'></img>
