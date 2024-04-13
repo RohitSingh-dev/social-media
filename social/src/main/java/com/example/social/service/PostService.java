@@ -1,6 +1,8 @@
 package com.example.social.service;
 
 import java.io.IOException;
+import java.sql.Date;
+import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
 
@@ -12,6 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.example.social.entity.Post;
 import com.example.social.entity.User;
+import com.example.social.model.PostResponse;
 import com.example.social.repository.PostRepository;
 import com.example.social.repository.UserRepository;
 
@@ -30,6 +33,7 @@ public class PostService {
         User existingUser= userRepository.findById(id).get();
         post.setUser(existingUser);
         post.setPic(new String(Base64.getEncoder().encode(pic.getBytes())));
+        post.setCreatedDate(new Date(System.currentTimeMillis()));
         repository.save(post);
         return "Post Uploaded";
     }
@@ -44,14 +48,27 @@ public class PostService {
         return "Post deleted successfully";
     }
 
-    public List<Post> getAllUserPosts(int id){
+    public List<PostResponse> getAllUserPosts(int id){
         validateLoggedInUser(userRepository.findById(id).get());
         List<Post> posts = repository.findByUser_Id(id);
-        return posts;
+        List<PostResponse> postResponses= new ArrayList<>();
+        for(Post post : posts){
+            PostResponse postResponse= new PostResponse();
+            postResponse.setUser_name(post.getUser().getName());
+            postResponse.setPic(post.getPic());
+            postResponse.setLikes(post.getLikes());
+            postResponses.add(postResponse);
+        }
+        return postResponses;
     }
 
-    public Post getPost(int id){
-        return repository.findById(id).orElseThrow(()-> new RuntimeException("Post not Found"));
+    public PostResponse getPost(int id){
+        Post post= repository.findById(id).orElseThrow(()-> new RuntimeException("Post not Found"));
+        PostResponse postResponse= new PostResponse();
+        postResponse.setUser_name(post.getUser().getName());
+        postResponse.setPic(post.getPic());
+        postResponse.setLikes(post.getLikes());
+        return postResponse;
     }
 
 

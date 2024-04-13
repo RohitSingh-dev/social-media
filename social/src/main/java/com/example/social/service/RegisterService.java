@@ -27,12 +27,13 @@ public class RegisterService {
     public String registerUser(Map<String, String> params){
         LoginInfo loginInfo= loginInfoRepository.findByUsername(params.get("username"));
         if(Objects.nonNull(loginInfo)){
-            throw new RuntimeException("User already exists, Enter different username");
+            throw new RuntimeException("User already exists, Enter different Email");
         }
         String password= passwordEncoder.encode(params.get("password"));
         loginInfo= new LoginInfo(params.get("username"), password);
         loginInfoRepository.save(loginInfo);
         User user = new User();
+        user.setName(params.get("name"));
         user.setEmailId(params.get("username"));
         user.setPassword(password);
         userRepository.save(user);

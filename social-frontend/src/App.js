@@ -1,5 +1,5 @@
 import './App.css';
-import {AboutPage, BlogPage, ChatPage, ContactPage, Dashboard, FriendsPage, Homepage, ProfilePage, RegisterPage, SignInPage, UserPostsPage} from './components';
+import {AboutPage, BlogPage, ChatPage, ContactPage, Dashboard, FriendsPage, Homepage, ProfilePage, ProfilePageEdit, RegisterPage, SignInPage, UserPostsPage} from './components';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
         <Route path='/Friends' element={<FriendsPage />} />
         <Route path='/Chat' element={<ChatPage />} />
         <Route path='/MyPosts' element={<UserPostsPage />} />
+        <Route path='/Profile/edit' element={<ProfilePageEdit />} />
       </Routes>
     </BrowserRouter>
   );

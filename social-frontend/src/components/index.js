@@ -14,3 +14,5 @@ export {default as ProfilePage} from './profilePage/ProfilePage';
 export {default as FriendsPage} from './friendsPage/FriendsPage';
 export {default as ChatPage} from './chatPage/ChatPage';
 export {default as UserPostsPage} from './userPostsPage/UserPostsPage';
+export {default as ProfilePageEdit} from './profilePageEdit/ProfilePageEdit';
+export {default as CreatePost} from './createPost/CreatePost';

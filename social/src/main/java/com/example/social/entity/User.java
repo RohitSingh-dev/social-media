@@ -27,9 +27,9 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @NotBlank(message = "Name should not be blank")
+    // @NotBlank(message = "Name should not be blank")
     private String name;
-    @Email(message = "Enter a valid Email Id")
+    // @Email(message = "Enter a valid Email Id")
     private String emailId;
     @Min(10)
     @Max(10)

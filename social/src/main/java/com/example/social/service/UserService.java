@@ -65,12 +65,11 @@ public class UserService {
 
     public User updateUser(User user){
         validateLoggedInUser(user);
-        User existingUser= repository.findById(user.getId()).orElseThrow(()->new RuntimeException("User Not Found"));
+        User existingUser= repository.findByEmailId(user.getEmailId());
         existingUser.setName(user.getName());
         existingUser.setBio(user.getBio());
         existingUser.setEmailId(user.getEmailId());
         existingUser.setPhNum(user.getPhNum());
-        existingUser.setPassword(user.getPassword());
         repository.save(existingUser);
         return existingUser;
     }
@@ -120,7 +119,7 @@ public class UserService {
     public void validateLoggedInUser(User user){
         UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         User loggedInUser = repository.findByEmailId(userDetails.getUsername());
-        if(loggedInUser.getId()!= user.getId()){
+        if(!loggedInUser.getEmailId().equals(user.getEmailId())){
             throw new RuntimeException("Invalid User");
         }
     }

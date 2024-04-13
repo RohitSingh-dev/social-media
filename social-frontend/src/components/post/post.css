@@ -30,6 +30,10 @@
 .post-c3{
     display: flex;
 }
+.post-c3-likes{
+    display: flex;
+    align-items: center;
+}
 .post-c3 button{
     border: none;
     background: none;

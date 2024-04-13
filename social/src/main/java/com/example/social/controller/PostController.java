@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.social.entity.Post;
+import com.example.social.model.PostResponse;
 import com.example.social.service.PostService;
 
 @RestController
@@ -44,12 +45,12 @@ public class PostController {
     }
 
     @GetMapping("/user/{id}")
-    public ResponseEntity<List<Post>> getAllUserPosts(@PathVariable int id){
-        return new ResponseEntity<List<Post>>(service.getAllUserPosts(id), HttpStatus.OK);
+    public ResponseEntity<List<PostResponse>> getAllUserPosts(@PathVariable int id){
+        return new ResponseEntity<List<PostResponse>>(service.getAllUserPosts(id), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Post> getPost(@PathVariable int id){
+    public ResponseEntity<PostResponse> getPost(@PathVariable int id){
         return ResponseEntity.ok().body(service.getPost(id));
     }
 
