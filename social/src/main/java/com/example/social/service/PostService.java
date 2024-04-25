@@ -38,8 +38,17 @@ public class PostService {
         return "Post Uploaded";
     }
 
-    public List<Post> getAllPost(){
-        return (List<Post>) repository.findAll();
+    public List<PostResponse> getAllPost(){
+        List<Post> posts = (List<Post>) repository.findAll();
+        List<PostResponse> postResponses= new ArrayList<>();
+        for(Post post : posts){
+            PostResponse postResponse= new PostResponse();
+            postResponse.setUser_name(post.getUser().getName());
+            postResponse.setPic(post.getPic());
+            postResponse.setLikes(post.getLikes());
+            postResponses.add(postResponse);
+        }
+        return postResponses;
     }
 
     public String deletePost(int id){

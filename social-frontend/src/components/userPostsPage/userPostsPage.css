@@ -3,7 +3,6 @@
     flex-direction: column;
     background-image: url(../../assets/dashboard_background.webp);
     background-position: center;
-    height: 100%;
 }
 .userPostsPage-bottom{
     display: flex;
@@ -42,4 +41,10 @@
 }
 .userPostsPage-bottom-right-top button:hover{
     background-color: #e2576c;
+}
+.userPostsPage-bottom-right-bottom{
+    display: 100vh;
+}
+.createPost-scrollProperty{
+    display: none;
 }

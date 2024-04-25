@@ -14,13 +14,13 @@ const WelcomeBar = () => {
         </div>
         <div className='welcomeBar-right'>
         <div className='welcomeBar-right-new'>
-        <button type="button" class="btn btn--red">
+        <a href='/New_features'><button type="button" class="btn btn--red">
             <span class="btn__txt">NEW!</span>
             <i class="btn__bg" aria-hidden="true"></i>
             <i class="btn__bg" aria-hidden="true"></i>
             <i class="btn__bg" aria-hidden="true"></i>
             <i class="btn__bg" aria-hidden="true"></i>
-        </button>
+        </button></a>
         </div>
         <div className='welcomeBar-right-logout'>
             <a href='/' ><button>LogOut</button></a>

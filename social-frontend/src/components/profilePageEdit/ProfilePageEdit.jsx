@@ -11,9 +11,9 @@ const ProfilePageEdit = () => {
     useEffect(() => {
       if(!loading){
         setLoading(true);
-        fetch("/user/5",{
+        fetch("/user/1",{
           method: "GET",
-          headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyb2hpdEBnbWFpbC5jb20iLCJleHAiOjE3MTMwNDIzMDIsImlhdCI6MTcxMzAyMDcwMn0.MDXJYZW8HPJpFyM8K5s_x19g6v-wzR_st_Ufiw2rTPM'},
+          headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaGlyYWpAZ21haWwuY29tIiwiZXhwIjoxNzEzMzMzNzEyLCJpYXQiOjE3MTMyNDczMTJ9.VWzdawy3n24GrlEZLTWH_At6vxc_yAnr3KOSEJdtUFw'},
         }).then(res => res.json()).then(json => setUser(json)).catch(err => {console.log(err); setLoading(false)});
       }
     }, []);
@@ -30,7 +30,7 @@ const ProfilePageEdit = () => {
                 bio: user.bio
             }),
             headers: {'Content-Type': 'application/json',
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyb2hpdEBnbWFpbC5jb20iLCJleHAiOjE3MTMwNDIzMDIsImlhdCI6MTcxMzAyMDcwMn0.MDXJYZW8HPJpFyM8K5s_x19g6v-wzR_st_Ufiw2rTPM'},
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaGlyYWpAZ21haWwuY29tIiwiZXhwIjoxNzEzMzMzNzEyLCJpYXQiOjE3MTMyNDczMTJ9.VWzdawy3n24GrlEZLTWH_At6vxc_yAnr3KOSEJdtUFw'},
           });
           let resJSON = await res.text();
           if(res.status===200){
@@ -53,9 +53,9 @@ const ProfilePageEdit = () => {
         e.preventDefault();
         const data = new FormData();
         data.append("file", file);
-        fetch("/user/5",{
+        fetch("/user/1",{
           method: "PUT",
-          headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyb2hpdEBnbWFpbC5jb20iLCJleHAiOjE3MTMwNDIzMDIsImlhdCI6MTcxMzAyMDcwMn0.MDXJYZW8HPJpFyM8K5s_x19g6v-wzR_st_Ufiw2rTPM'},
+          headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaGlyYWpAZ21haWwuY29tIiwiZXhwIjoxNzEzMzMzNzEyLCJpYXQiOjE3MTMyNDczMTJ9.VWzdawy3n24GrlEZLTWH_At6vxc_yAnr3KOSEJdtUFw'},
       body: data,
       }).then(response=> {
           if(response.ok){

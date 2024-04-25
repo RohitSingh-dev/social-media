@@ -9,6 +9,10 @@
     margin: 0px 50px;
     color: #fff;
 }
+.blogPage-top a{
+    text-decoration: none;
+    color: #fff;
+}
 .blogPage-top span{
     color: #f34f67;
 }

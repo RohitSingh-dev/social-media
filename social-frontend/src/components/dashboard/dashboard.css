@@ -3,18 +3,18 @@
     flex-direction: column;
     background-image: url(../../assets/dashboard_background.webp);
     background-position: center;
-    height: 100vh;
+    height: 100%;
 }
 .dashboard-bottom{
     display: flex;
     align-items: center;
-    height: 100vh;
 }
 .dashboard-bottom-left{
     margin-left: 50px;
 }
 .dashboard-bottom-right{
     display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: center;
+    align-items: center;
 }

@@ -18,6 +18,7 @@ function App() {
         <Route path='/Chat' element={<ChatPage />} />
         <Route path='/MyPosts' element={<UserPostsPage />} />
         <Route path='/Profile/edit' element={<ProfilePageEdit />} />
+        <Route path='/New_features' element={<BlogPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -3,6 +3,9 @@
     flex-direction: column;
     background-color: #fff;
     width: min-content;
+    border-top: 1px black solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .post-c1{
     display: flex;

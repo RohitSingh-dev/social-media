@@ -9,6 +9,10 @@
     margin-left: 50px;
     color: #fff;
 }
+.navbar-left a{
+    text-decoration: none;
+    color: #fff;
+}
 .navbar-left span{
     color: #f34f67;
 }

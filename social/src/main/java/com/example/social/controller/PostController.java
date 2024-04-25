@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.example.social.entity.Post;
 import com.example.social.model.PostResponse;
 import com.example.social.service.PostService;
 
@@ -35,8 +34,8 @@ public class PostController {
     }
 
     @GetMapping("")
-    public ResponseEntity<List<Post>> getAllPost(){
-        return new ResponseEntity<List<Post>>(service.getAllPost(), HttpStatus.OK);
+    public ResponseEntity<List<PostResponse>> getAllPost(){
+        return new ResponseEntity<List<PostResponse>>(service.getAllPost(), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")

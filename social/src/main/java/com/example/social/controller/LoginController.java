@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.social.model.AuthenticationModel;
 import com.example.social.service.JwtService;
+import com.example.social.service.LoginService;
 
 @RestController
 public class LoginController {
@@ -22,6 +23,9 @@ public class LoginController {
     @Autowired
     private JwtService jwtService;
 
+    @Autowired
+    private LoginService loginService;
+
     @PostMapping("/login")
     public ResponseEntity<?> authenticate(@RequestBody AuthenticationModel authenticationModel){
         try{
@@ -30,6 +34,6 @@ public class LoginController {
             return new ResponseEntity<String>("Invalid Credentials", HttpStatus.UNAUTHORIZED);
         }
         String token= jwtService.generateToken(authenticationModel.getUsername());
-        return ResponseEntity.ok().body(token);
+        return ResponseEntity.ok().body(loginService.login(authenticationModel.getUsername(), token));
     }
 }

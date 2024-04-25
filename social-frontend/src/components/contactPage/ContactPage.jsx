@@ -15,8 +15,8 @@ const ContactPage = () => {
         </div>
         <div className='contactPage-bottom-bottom'>
           <div><Contacts image={contact1} name='Rohit Kumar Singh' role='Backend Dev' email='rohitsingh20082002@gmail.com'></Contacts></div>
-          <div><Contacts image={contact3} name='Dhiraj Kumar Gupta' role='Frontend Dev' email='dhirajgupta@gmail.com'></Contacts></div>
-          <div><Contacts image={contact2} name='Raushan Kumar' role='Frontend Dev' email='raushankumar@gmail.com'></Contacts></div>
+          <div><Contacts image={contact3} name='Dhiraj Kumar Gupta' role='Frontend Dev' email='dhirajkumargupta2000@gmail.com'></Contacts></div>
+          <div><Contacts image={contact2} name='Raushan Kumar' role='Frontend Dev' email='raushankumar2037@gmail.com'></Contacts></div>
         </div>
       </div>
     </div>

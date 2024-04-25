@@ -1,22 +1,26 @@
-E:\Social Media Platform\social\src\main\java\com\example\social\entity\Post.java
-E:\Social Media Platform\social\src\main\java\com\example\social\controller\UserContoller.java
-E:\Social Media Platform\social\src\main\java\com\example\social\repository\CommentRepository.java
-E:\Social Media Platform\social\src\main\java\com\example\social\config\WebSecurityConfig.java
-E:\Social Media Platform\social\src\main\java\com\example\social\entity\User.java
-E:\Social Media Platform\social\src\main\java\com\example\social\entity\LoginInfo.java
-E:\Social Media Platform\social\src\main\java\com\example\social\SocialApplication.java
-E:\Social Media Platform\social\src\main\java\com\example\social\service\JwtService.java
-E:\Social Media Platform\social\src\main\java\com\example\social\service\CommentService.java
-E:\Social Media Platform\social\src\main\java\com\example\social\service\PostService.java
-E:\Social Media Platform\social\src\main\java\com\example\social\controller\PostController.java
-E:\Social Media Platform\social\src\main\java\com\example\social\exception\ServerException.java
-E:\Social Media Platform\social\src\main\java\com\example\social\config\JwtAuthFilter.java
-E:\Social Media Platform\social\src\main\java\com\example\social\service\AuthService.java
-E:\Social Media Platform\social\src\main\java\com\example\social\repository\PostRepository.java
-E:\Social Media Platform\social\src\main\java\com\example\social\model\AuthenticationModel.java
-E:\Social Media Platform\social\src\main\java\com\example\social\repository\LoginInfoRepository.java
-E:\Social Media Platform\social\src\main\java\com\example\social\entity\Comment.java
-E:\Social Media Platform\social\src\main\java\com\example\social\repository\UserRepository.java
-E:\Social Media Platform\social\src\main\java\com\example\social\service\UserService.java
-E:\Social Media Platform\social\src\main\java\com\example\social\controller\CommentController.java
-E:\Social Media Platform\social\src\main\java\com\example\social\controller\LoginController.java
+D:\SM\social-media\social\src\main\java\com\example\social\entity\LoginInfo.java
+D:\SM\social-media\social\src\main\java\com\example\social\repository\LoginInfoRepository.java
+D:\SM\social-media\social\src\main\java\com\example\social\repository\CommentRepository.java
+D:\SM\social-media\social\src\main\java\com\example\social\model\PostResponse.java
+D:\SM\social-media\social\src\main\java\com\example\social\controller\UserContoller.java
+D:\SM\social-media\social\src\main\java\com\example\social\entity\Comment.java
+D:\SM\social-media\social\src\main\java\com\example\social\config\WebSecurityConfig.java
+D:\SM\social-media\social\src\main\java\com\example\social\service\CommentService.java
+D:\SM\social-media\social\src\main\java\com\example\social\service\UserService.java
+D:\SM\social-media\social\src\main\java\com\example\social\controller\LoginController.java
+D:\SM\social-media\social\src\main\java\com\example\social\entity\User.java
+D:\SM\social-media\social\src\main\java\com\example\social\exception\ServerException.java
+D:\SM\social-media\social\src\main\java\com\example\social\entity\Post.java
+D:\SM\social-media\social\src\main\java\com\example\social\controller\PostController.java
+D:\SM\social-media\social\src\main\java\com\example\social\controller\RegisterController.java
+D:\SM\social-media\social\src\main\java\com\example\social\model\AuthenticationModel.java
+D:\SM\social-media\social\src\main\java\com\example\social\service\PostService.java
+D:\SM\social-media\social\src\main\java\com\example\social\service\JwtService.java
+D:\SM\social-media\social\src\main\java\com\example\social\SocialApplication.java
+D:\SM\social-media\social\src\main\java\com\example\social\repository\PostRepository.java
+D:\SM\social-media\social\src\main\java\com\example\social\service\AuthService.java
+D:\SM\social-media\social\src\main\java\com\example\social\repository\UserRepository.java
+D:\SM\social-media\social\src\main\java\com\example\social\config\JwtAuthFilter.java
+D:\SM\social-media\social\src\main\java\com\example\social\service\RegisterService.java
+D:\SM\social-media\social\src\main\java\com\example\social\controller\CommentController.java
+D:\SM\social-media\social\src\main\java\com\example\social\model\UserProfileResponse.java
